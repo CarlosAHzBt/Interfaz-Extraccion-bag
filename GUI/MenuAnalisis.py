@@ -9,3 +9,10 @@ class MenuAnalisis:
     def __init__(self,master):
         self.master = master
         self.setup_gui()
+    
+    def setup_gui(self):
+        boton_analizar = tk.Button(self.master, text="Analizar Información", command=self.analizar_informacion)
+        boton_analizar.pack(pady=10)
+
+
+    
