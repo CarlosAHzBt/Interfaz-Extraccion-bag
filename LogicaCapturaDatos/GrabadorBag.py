@@ -7,7 +7,7 @@ import time
 import os
 
 class GrabadorBag:
-    def __init__(self, archivo_config=None):
+    def __init__(self, archivo_config=None, carpeta_destino=None):
         self.carpeta_destino = carpeta_destino
         # Iniciar el pipeline
         self.pipeline = rs.pipeline()
