@@ -12,7 +12,7 @@ class MenuGrabacion:
     def __init__(self, master):
         self.master = master
         self.setup_gui()
-        self.grabador = GrabadorBag()
+        self.grabador = GrabadorBag(15)
         self.carpeta_destino = None
 
     def setup_gui(self):
@@ -46,7 +46,7 @@ class MenuGrabacion:
         if not self.carpeta_destino:
             messagebox.showerror("Error", "Por favor selecciona una carpeta de destino.")
             return
-        self.grabador.iniciar_grabacion(self.carpeta_destino)
+        self.grabador.ejecutar_grabacion(self.carpeta_destino)
         messagebox.showinfo("Grabación Iniciada", "La grabación ha comenzado.")
         self.master.destroy()
 

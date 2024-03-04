@@ -1,76 +1,53 @@
-# GrabadorBag.py
-from LogicaCapturaDatos.Config import Config
 import pyrealsense2 as rs
-import numpy as np
-import cv2
 import time
+import datetime
 import os
 
 class GrabadorBag:
-    def __init__(self, archivo_config=None, carpeta_destino=None):
-        self.carpeta_destino = carpeta_destino
-        # Iniciar el pipeline
+    def __init__(self, duracion=15):
+        self.config = rs.config()
+        self.duracion = duracion
+        self.configurar_streams()
+
+    def configurar_streams(self):
+        """Configura los streams de profundidad y color."""
+        self.config.enable_stream(rs.stream.depth, 848, 480, rs.format.z16, 30)
+        self.config.enable_stream(rs.stream.color, 848, 480, rs.format.bgr8, 30)
+
+    def generar_nombre_archivo_en_carpeta_seleccionada(self,):
+        """Genera un nombre de archivo basado en la fecha y hora actual."""
+        #guardar el archivo en la carpeta seleccionada
+        return datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + ".bag"
+         
+
+    def iniciar_pipeline(self,carpeta_destino):
+        """Inicia el pipeline de grabación con la configuración dada."""
+        self.nombre_archivo = self.generar_nombre_archivo_en_carpeta_seleccionada()
+        # guardar el archivo en la carpeta destino con el nombre asignado
+        self.nombre_archivo = carpeta_destino + self.nombre_archivo
+        self.config.enable_record_to_file(self.nombre_archivo)
         self.pipeline = rs.pipeline()
-        # Cargar el archivo de configuración
-        self.config = Config(archivo_config) if archivo_config else None
-        self.config_data = self.config.load_config() if self.config else {}
-        # Configuración para la grabación
-        self.config_bag = rs.config()
-        self.num_archivo = 0
-        self.grabando = False
+        self.pipeline.start(self.config)
 
-    def iniciar_grabacion(self, carpeta_destino):
-        # Define el nombre del archivo .bag donde se guardarán los datos
-        nombre_archivo = os.path.join(carpeta_destino, f"grabacion_{self.num_archivo}.bag")
-        self.guardar_archivo(nombre_archivo)
 
-        # Inicia la grabación con la configuración especificada
-        try:
-            self.pipeline.start(self.config_bag)
-            self.grabando = True
-            print(f"Iniciando grabación en {nombre_archivo}...")
+    def grabar(self):
+        """Realiza la grabación durante un tiempo especificado."""
+        print(f"Grabación iniciada, guardando en {self.nombre_archivo}.")
+        time.sleep(self.duracion)
+        print("Grabación detenida.")
 
-            # Grabar en intervalos de 30 segundos
-            inicio = time.time()
-            while self.grabando and time.time() - inicio < 30:
-                time.sleep(1)  # Espera activa para simplificar el ejemplo
+    def detener_pipeline(self):
+        """Detiene el pipeline."""
+        self.pipeline.stop()
 
-            if self.grabando:
-                self.detener_grabacion()
+    def guardar_bag(self, carpeta_destino):
+        """Guarda el archivo .bag en la carpeta de destino."""
+        self.nombre_archivo = os.path.join(carpeta_destino, self.nombre_archivo)
+        os.rename(self.nombre_archivo, self.nombre_archivo)
 
-            self.num_archivo += 1
-        except Exception as e:
-            print(f"Error al iniciar la grabación: {e}")
-            self.detener_grabacion()
-
-    def detener_grabacion(self):
-        if self.grabando:
-            self.pipeline.stop()
-            self.grabando = False
-            print("Grabación detenida.")
-
-    def guardar_archivo(self, archivo):
-        if not os.path.exists(os.path.dirname(archivo)):
-            os.makedirs(os.path.dirname(archivo))
-        self.config_bag.enable_record_to_file(archivo)
-        print(f"Configuración para guardar archivo establecida: {archivo}")
-
-    def mostrar_ventana(self):
-        if not self.grabando:
-            print("La grabación no está activa.")
-            return
-
-        try:
-            while self.grabando:
-                frames = self.pipeline.wait_for_frames()
-                color_frame = frames.get_color_frame()
-                if not color_frame:
-                    continue
-
-                color_image = np.asanyarray(color_frame.get_data())
-                cv2.namedWindow('RealSense', cv2.WINDOW_AUTOSIZE)
-                cv2.imshow('RealSense', color_image)
-                if cv2.waitKey(1) & 0xFF == ord('q'):
-                    break
-        finally:
-            cv2.destroyAllWindows()
+    def ejecutar_grabacion(self, carpeta_destino):
+        """Método principal para ejecutar la grabación."""
+        self.carpeta_destino=carpeta_destino
+        self.iniciar_pipeline(carpeta_destino)
+        self.grabar()
+        self.detener_pipeline()
