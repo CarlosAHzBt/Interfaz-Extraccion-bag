@@ -25,12 +25,14 @@ class MenuPrincipal:
     def abrir_menu_extraccion(self):
         self.nueva_ventana = tk.Toplevel(self.master)
         self.app_secundaria = MenuExtraccion(master=self.nueva_ventana)
+        self.master.withdraw()  # Esconde la ventana principal
 
     def abrir_menu_grabacion(self):
         self.nueva_ventana = tk.Toplevel(self.master)
         self.app_secundaria = MenuGrabacion(master=self.nueva_ventana)
+        self.master.withdraw()  # Esconde la ventana principal
 
     def abrir_menu_analisis(self):
         self.nueva_ventana = tk.Toplevel(self.master)
         self.app_secundaria = MenuAnalisis(master=self.nueva_ventana)
-        
+        self.master.withdraw()  # Esconde la ventana principal
