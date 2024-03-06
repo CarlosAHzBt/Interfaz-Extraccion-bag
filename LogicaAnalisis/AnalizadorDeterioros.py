@@ -79,6 +79,7 @@ class AnalizadorDeterioros:
        #Funcion a llamar desde el boton de analizar.
     def analizar_deterioros(self, carpeta_base):
         ruta_carpeta_archivos = carpeta_base #Variable que se debe obtener del boton de seleccionar carpeta.
+        self.cargar_modelo()
         lista_baches = self.procesar_imagenes(ruta_carpeta_archivos)
         diametro_minimo = 150
         diametro_maximo = 1000
