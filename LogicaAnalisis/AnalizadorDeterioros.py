@@ -47,7 +47,7 @@ class AnalizadorDeterioros:
                     self.lista_baches.append(bache)
         return self.lista_baches
     
-    def filtrar_baches_por_radio(baches, diametro_minimo, diamtro_maximo):
+    def filtrar_baches_por_radio(self,baches, diametro_minimo, diamtro_maximo):
         baches_filtrados = [bache for bache in baches if diametro_minimo <= bache.diametro_bache <= diamtro_maximo]
         return baches_filtrados
     
@@ -63,12 +63,12 @@ class AnalizadorDeterioros:
     
     #Con la lista de baches filtrados por radio se puede hacer el procesamiento de nubes de puntos
     #Se puede hacer el procesamiento de nubes de puntos en paralelo
-    def procesar_nubes_de_puntos(lista_baches):
+    def procesar_nubes_de_puntos(self,lista_baches):
         for bache in lista_baches:
             bache.procesar_nube_puntos()
             print(f"Se procesó la nube de puntos del bache {bache.id_bache} procedente del bag {bache.bag_de_origen}.")
     
-    def guardar_informacion_baches(lista_baches, nombre_archivo):
+    def guardar_informacion_baches(self,lista_baches, nombre_archivo):
         with open(nombre_archivo, 'w') as archivo:
             for bache in lista_baches:
                 # Compilando la información del bache en una cadena de texto

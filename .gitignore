@@ -2,4 +2,7 @@
 /GUI/__pycache__
 /LogicaCapturaDatos/__pycache__
 /LogicaExtraccionBag/__pycache__
+/LogicaAnalisis/__pycache__
+/LogicaAnalisis/FiltrosDeProcesamiento/__pycache__
+LogicaAnalisis/RutaModelo/__pycache__
 
