@@ -19,13 +19,14 @@ class AlturaCaptura:
         else:
             nube_puntos= self.archivo_ply
 
+        
+        #Si la nube de puntos esta vacia, retornar 0
+            
         # Obtener las coordenadas de los puntos
+        
         puntos = np.asarray(nube_puntos.points)
-
-        # Verificar si la nube de puntos está vacía
-        if puntos.size == 0:
-            raise ValueError("La nube de puntos está vacía.")
-
+        
+        
         # Calcular la moda de las alturas en el eje Z
         puntos = np.asarray(nube_puntos.points)
         superficie_estimada = np.median(puntos[:, 2])

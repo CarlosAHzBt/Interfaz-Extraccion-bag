@@ -7,7 +7,8 @@ from LogicaAnalisis.FiltrosDeProcesamiento.FiltrosDeProcesamiento import PointCl
 from LogicaAnalisis.FiltrosDeProcesamiento.Ransac import RANSAC
 from LogicaAnalisis.FiltrosDeProcesamiento.FIltroOutliers import FiltroOutliers
 import open3d as o3d
-
+import numpy as np
+import pyrealsense2 as rs
 class Bache:
     def __init__(self, bag_de_origen, imagenRGB, id_bache, coordenadas=None):
         self.id_bache = id_bache
@@ -72,12 +73,16 @@ class Bache:
         if self.radio_maximo == 0:
             raise ValueError("No se encontraron puntos dentro del contorno para calcular el radio máximo.")
         self.set_ruta_nube_puntos()
-        self.set_altura_captura(self.ruta_nube_puntos)
-        self.ConvPx2M.calcular_escala(self.altura_captura)
-        self.set_escala_horizontal()
-        self.radio_maximo = self.ConvPx2M.convertir_radio_pixeles_a_metros(self.radio_maximo, self.escale_horizontal)
-        self.radio_maximo *= 1000
-        self.get_diametro_bache()
+        try:
+            self.set_altura_captura(self.ruta_nube_puntos)
+        
+            self.ConvPx2M.calcular_escala(self.altura_captura)
+            self.set_escala_horizontal()
+            self.radio_maximo = self.ConvPx2M.convertir_radio_pixeles_a_metros(self.radio_maximo, self.escale_horizontal)
+            self.radio_maximo *= 1000
+            self.get_diametro_bache()
+        except:
+            pass
 
     def procesar_nube_puntos(self):
         self._cargar_nube_puntos()
@@ -87,9 +92,9 @@ class Bache:
         pcd_nivelado, plano = self.ransac.procesar_nube_completa(self.nube_puntos)
         self.nube_puntos_procesada = pcd_nivelado
         #Estimar altura de captura de la nube de puntos nivelada
-        self.set_altura_captura(self.ruta_nube_puntos)
+        self.set_altura_captura_con_nube_nivelada()# Aqui no estoy seguro porque el contorno lo saco desde la imagen y no desde la nube de puntos
         self.convertir_coordenadas_contorno_a_metros_y_centrar()
-        self.point_cloud_filter.visuzlizar_imgen_rgb(self.imagenRGB, self.coordenadas_contorno_metros_centro)
+        #self.point_cloud_filter.visuzlizar_imgen_rgb(self.imagenRGB, self.coordenadas_contorno_metros_centro)
         self.nube_puntos_procesada = self.point_cloud_filter.filter_points_with_bounding_box(self.nube_puntos, self.coordenadas_contorno_metros_centro)
         print("El tamaño de la nube de puntos es: ", len(self.nube_puntos_procesada.points))
         return self.nube_puntos_procesada
@@ -97,9 +102,25 @@ class Bache:
     def _cargar_nube_puntos(self):
         self.nube_puntos = o3d.io.read_point_cloud(self.ruta_nube_puntos)
 
-    def set_altura_captura(self,nube_puntos):
+    def set_altura_captura(self, nube_puntos):
+        self.revisar_nube_puntos_no_este_vacia()
+        if self.tiene_puntos is False:  # Asumiendo que nube_puntos puede ser una lista
+            print("La nube de puntos está vacía.")
+            return False  # Indica que la nube de puntos está vacía
         self.altura_captura = self.ConvPx2M.estimar_altura_de_captura(nube_puntos)
+        return True  # Indica que la nube de puntos no está vacía
+    
+    def set_altura_captura_con_nube_nivelada(self):
+        self.altura_captura_nube_nivelada  =self.ConvPx2M.estimar_altura_de_captura_de_nube_nivelada(self.nube_puntos_procesada)
 
+    def revisar_nube_puntos_no_este_vacia(self):
+        #Revisar que la nube de puntos tenga puntos
+        self.tiene_puntos = False
+        self.nube_puntos = o3d.io.read_point_cloud(self.ruta_nube_puntos)
+        if len(self.nube_puntos.points) > 0:
+            self.tiene_puntos = True
+        return self.tiene_puntos
+        
     def set_escala_horizontal(self):
          self.escale_horizontal, self.escala_vertical = self.ConvPx2M.calcular_escala(self.altura_captura)
 
@@ -107,6 +128,7 @@ class Bache:
         self.diametro_bache = self.radio_maximo * -2
         return self.diametro_bache
 
+    
     def convertir_coordenadas_contorno_a_metros_y_centrar(self):
         ancho_imagen, alto_imagen = self.imagen_original_shape[1], self.imagen_original_shape[0]
         centro_x, centro_y = ancho_imagen / 2, alto_imagen / 2
@@ -139,12 +161,23 @@ class Bache:
     def visualizar_nube_de_puntos(self, pcd):
         o3d.visualization.draw_geometries([pcd])
 
+    def vizualizar_nube_de_puntos_con_punto_minimo_coloreado(self):
+        puntos = np.asarray(self.nube_puntos_procesada.points)
+        indice_punto_menor = np.argmin(puntos[:, 2])
+        # Cambiar el color del punto más profundo a rosa
+        rosa = [0, 1, 0.5]  # Color rosa (RGB)
+        self.nube_puntos_procesada.colors[indice_punto_menor] = rosa
+        #vizualizar nube de puntos
+        o3d.visualization.draw_geometries([self.nube_puntos_procesada])
+
+        
+
     def estimar_profundidad(self):
-        #self.visualizar_nube_de_puntos(self.nube_puntos_procesada)
+        self.vizualizar_nube_de_puntos_con_punto_minimo_coloreado()
         #Se hace una resta entre la altura de captura y el punto con menor valor en el eje Z de la nube de puntos
         puntos = np.asarray(self.nube_puntos_procesada.points)
         #Ver nube de puntos procesada
-        self.visualizar_nube_de_puntos(self.nube_puntos_procesada)
+        #self.visualizar_nube_de_puntos(self.nube_puntos_procesada)
         #Se abre la nube de putnos procesada y se obtiene el punto con menor valor en el eje Z
         if puntos.size > 0:
             minimo = np.min(puntos[:, 2])
@@ -153,6 +186,7 @@ class Bache:
         minimo = None
         minimo = np.min(puntos[:, 2])
         #Se hace la resta
-        self.profundidad_del_bache = self.altura_captura - minimo
+        self.profundidad_del_bache = self.altura_captura_nube_nivelada - minimo
+        
 
     

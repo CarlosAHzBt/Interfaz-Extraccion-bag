@@ -49,25 +49,36 @@ class AnalizadorDeterioros:
     
     def filtrar_baches_por_radio(self,baches, diametro_minimo, diamtro_maximo):
         baches_filtrados = [bache for bache in baches if diametro_minimo <= bache.diametro_bache <= diamtro_maximo]
+        #Checar que la nube de puntos de los baches no este vacia
+        #for bache in baches_filtrados:
+        #    tiene_puntos = bache.revisar_nube_puntos_no_este_vacia()
+        #    if not tiene_puntos:
+        #        print(f"La nube de puntos del bache {bache.id_bache} está vacía.")
+        #        #borrar bache de la lista
+        #        baches_filtrados.remove(bache) 
         return baches_filtrados
     
     
-    def filtrar_y_procesar_baches(self,lista_baches, diametro_minimo, diametro_maximo):
-        lista_baches = self.filtrar_baches_por_radio(lista_baches, diametro_minimo, diametro_maximo)
-        print(f"Se encontraron {len(lista_baches)} baches con un diámetro entre {diametro_minimo} y {diametro_maximo} unidades.")
+    def filtrar_y_procesar_baches(self, diametro_minimo, diametro_maximo):
+        self.lista_baches = self.filtrar_baches_por_radio(self.lista_baches, diametro_minimo, diametro_maximo)
+        print(f"Se encontraron {len(self.lista_baches)} baches con un diámetro entre {diametro_minimo} y {diametro_maximo} unidades.")
         #Eliminar de la lista de baches los que no cumplan con el radio
-        self.procesar_nubes_de_puntos(lista_baches)
-        for bache in lista_baches:
+        self.procesar_nubes_de_puntos()
+        for bache in self.lista_baches:
             bache.estimar_profundidad()
             print(f"La profundidad estimada del bache {bache.id_bache} es {bache.profundidad_del_bache} m.")
     
     #Con la lista de baches filtrados por radio se puede hacer el procesamiento de nubes de puntos
     #Se puede hacer el procesamiento de nubes de puntos en paralelo
-    def procesar_nubes_de_puntos(self,lista_baches):
-        for bache in lista_baches:
-            bache.procesar_nube_puntos()
-            print(f"Se procesó la nube de puntos del bache {bache.id_bache} procedente del bag {bache.bag_de_origen}.")
-    
+    def procesar_nubes_de_puntos(self):
+        baches_validos = []
+        for bache in self.lista_baches:
+            if bache.set_altura_captura(bache.nube_puntos):  # Asumiendo que `nube_puntos` es accesible
+                bache.procesar_nube_puntos()  # Asumiendo que este método hace algo con la nube de puntos válida
+                print(f"Se procesó la nube de puntos del bache {bache.id_bache} procedente del bag {bache.bag_de_origen}.")
+                baches_validos.append(bache)
+        return baches_validos  # Devuelve solo los baches con nubes de puntos no vacías
+
     def guardar_informacion_baches(self,lista_baches, nombre_archivo):
         with open(nombre_archivo, 'w') as archivo:
             for bache in lista_baches:
@@ -80,9 +91,9 @@ class AnalizadorDeterioros:
     def analizar_deterioros(self, carpeta_base):
         ruta_carpeta_archivos = carpeta_base #Variable que se debe obtener del boton de seleccionar carpeta.
         self.cargar_modelo()
-        lista_baches = self.procesar_imagenes(ruta_carpeta_archivos)
+        self.lista_baches = self.procesar_imagenes(ruta_carpeta_archivos)
         diametro_minimo = 150
         diametro_maximo = 1000
-        self.filtrar_y_procesar_baches(lista_baches, diametro_minimo, diametro_maximo)
-        self.guardar_informacion_baches(lista_baches, "informacion_Resultados_baches.txt")
+        self.filtrar_y_procesar_baches( diametro_minimo, diametro_maximo)
+        self.guardar_informacion_baches(self.lista_baches, "informacion_Resultados_baches.txt")
     

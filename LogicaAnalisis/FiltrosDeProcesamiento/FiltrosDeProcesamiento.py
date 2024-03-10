@@ -28,14 +28,15 @@ class PointCloudFilter:
         
         # Filtra los puntos dentro del bounding box
         points = np.asarray(pcd.points)
-        filtered_points = points[
-            (points[:, 0] >= x_min) & (points[:, 0] <= x_max) &
-            (points[:, 1] >= y_min) & (points[:, 1] <= y_max)
-        ]
+        colors = np.asarray(pcd.colors)
+        mask = (points[:, 0] >= x_min) & (points[:, 0] <= x_max) & (points[:, 1] >= y_min) & (points[:, 1] <= y_max)
+        filtered_points = points[mask]
+        filtered_colors = colors[mask]
         
         # Crea una nueva nube de puntos con los puntos filtrados
         filtered_pcd = o3d.geometry.PointCloud()
         filtered_pcd.points = o3d.utility.Vector3dVector(filtered_points)
+        filtered_pcd.colors = o3d.utility.Vector3dVector(filtered_colors)
 
         # Opcional: Visualizar la nube de puntos filtrada
         #self.visualize_point_cloud(filtered_pcd)

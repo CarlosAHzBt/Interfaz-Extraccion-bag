@@ -56,5 +56,5 @@ class ModeloSegmentacion():
         mask_resized = self._redimensionar_mascara(predicted_mask)
         labeled_mask = self._etiquetar_regiones(mask_resized)
         coordenadas_baches = self._filtrar_regiones(labeled_mask)
-        #self._dibujar_regiones_filtradas(labeled_mask, coordenadas_baches) #Opcional, para ver mascaras de segmentacion
+        #self._dibujar_regiones_filtradas(labeled_mask, coordenadas_baches) #Opcional,(Debuging) para ver mascaras de segmentacion
         return coordenadas_baches

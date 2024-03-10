@@ -32,4 +32,4 @@ class ProcesadorBags:
         """
         bag_file_path = f"{self.bag_files_path}/{bag_file_path}"
         bag = BagFile(bag_file_path,carpeta_destino)
-        bag.process_bag_file(carpeta_destino)
+        bag.process_bag_file()
