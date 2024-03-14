@@ -1,148 +1,108 @@
-ID: frame_00116_0, Profundidad: 0.025745038415286414 m, Diámetro: 151.06675254942235 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.318000078201294 m
-ID: frame_00117_0, Profundidad: 0.02618637850193628 m, Diámetro: 163.29511267965006 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.3160001039505005 m
-ID: frame_00118_0, Profundidad: 0.02528960931081592 m, Diámetro: 159.9162276943962 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.3160001039505005 m
-ID: frame_00119_0, Profundidad: 0.024899178665945598 m, Diámetro: 187.29055683662796 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.3130000829696655 m
-ID: frame_00276_0, Profundidad: 0.010385165478843161 m, Diámetro: 163.32046353327152 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_00277_0, Profundidad: 0.00886194857721323 m, Diámetro: 218.74097709485895 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_00278_0, Profundidad: 0.007829322244526038 m, Diámetro: 193.74928144318767 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2670000791549683 m
-ID: frame_00299_1, Profundidad: 0.008429419838548613 m, Diámetro: 155.7259642194616 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.255000114440918 m
-ID: frame_00301_1, Profundidad: 0.02996556518348359 m, Diámetro: 368.2140399484596 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2620000839233398 m
-ID: frame_00302_1, Profundidad: 0.0424144587583406 m, Diámetro: 440.2602535844109 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_00303_3, Profundidad: 0.04875778736113223 m, Diámetro: 203.6092359335425 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_00304_0, Profundidad: 0.05367580454012355 m, Diámetro: 264.1243165190575 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_00305_0, Profundidad: 0.049347250702094 m, Diámetro: 267.407416302187 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2690000534057617 m
-ID: frame_00306_0, Profundidad: 0.046106540935797025 m, Diámetro: 210.13438861355004 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2690000534057617 m
-ID: frame_00397_0, Profundidad: 0.042687628902766894 m, Diámetro: 256.8282585690838 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_00398_0, Profundidad: 0.03161471088551515 m, Diámetro: 172.51401516932899 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2670000791549683 m
-ID: frame_00399_0, Profundidad: 0.03166044152286074 m, Diámetro: 233.0360095197547 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_00400_0, Profundidad: 0.025405774055887065 m, Diámetro: 241.9585782974116 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_00400_1, Profundidad: 0.008166488062796962 m, Diámetro: 172.48563378894858 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_00401_0, Profundidad: 0.002542146632255937 m, Diámetro: 225.5918855599947 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_00401_1, Profundidad: 0.00753504261815241 m, Diámetro: 181.04850038401082 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_00402_0, Profundidad: 0.00610172159325395 m, Diámetro: 163.26896724836112 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_00403_0, Profundidad: 0.0032259523160242942 m, Diámetro: 150.69457666318615 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2670000791549683 m
-ID: frame_00441_0, Profundidad: 0.008363083446143005 m, Diámetro: 206.83266955336583 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2760000228881836 m
-ID: frame_00442_0, Profundidad: 0.009020364094246114 m, Diámetro: 222.03263694061138 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2740000486373901 m
-ID: frame_00443_0, Profundidad: 0.0124924579328336 m, Diámetro: 229.30067341393368 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2720000743865967 m
-ID: frame_00444_0, Profundidad: 0.005470983788991912 m, Diámetro: 213.95533263118205 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2720000743865967 m
-ID: frame_00445_0, Profundidad: 0.0062069507070299235 m, Diámetro: 251.37578522251275 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2720000743865967 m
-ID: frame_00446_0, Profundidad: 0.004038881003152639 m, Diámetro: 160.82375371775464 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2720000743865967 m
-ID: frame_00510_0, Profundidad: 0.01722408038942036 m, Diámetro: 161.32948225162534 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2760000228881836 m
-ID: frame_00511_0, Profundidad: 0.029425005573887164 m, Diámetro: 165.85516532109514 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2790000438690186 m
-ID: frame_00512_0, Profundidad: 0.03396934016782671 m, Diámetro: 178.57310178372137 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.281000018119812 m
-ID: frame_00513_0, Profundidad: 0.040242222395357574 m, Diámetro: 161.9616504550031 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.281000018119812 m
-ID: frame_00598_0, Profundidad: 0.04374304931483919 m, Diámetro: 182.28371339793557 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2720000743865967 m
-ID: frame_00599_0, Profundidad: 0.026569690057634654 m, Diámetro: 179.93514552821287 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2740000486373901 m
-ID: frame_00707_0, Profundidad: 0.006963733836603758 m, Diámetro: 151.1730641020232 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.253000020980835 m
-ID: frame_00709_0, Profundidad: 0.008972690301648933 m, Diámetro: 290.01962220842387 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2600001096725464 m
-ID: frame_00710_0, Profundidad: 0.016912592064838528 m, Diámetro: 379.7310977336535 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2600001096725464 m
-ID: frame_00711_0, Profundidad: 0.013316228642642924 m, Diámetro: 373.44544879695 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.255000114440918 m
-ID: frame_00712_0, Profundidad: 0.011391938929302015 m, Diámetro: 366.4437128217027 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2510000467300415 m
-ID: frame_00713_0, Profundidad: 0.009531834581121945 m, Diámetro: 390.862205313902 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2480000257492065 m
-ID: frame_00714_0, Profundidad: 0.009968412709239205 m, Diámetro: 456.45183211650095 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.246000051498413 m
-ID: frame_00715_0, Profundidad: 0.008761571970096638 m, Diámetro: 690.7368432913421 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.246000051498413 m
-ID: frame_00716_0, Profundidad: 0.009720561539489747 m, Diámetro: 690.7368432913421 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.246000051498413 m
-ID: frame_00717_0, Profundidad: 0.008307793340591063 m, Diámetro: 693.5086577215371 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2510000467300415 m
-ID: frame_00718_0, Profundidad: 0.009827817053113641 m, Diámetro: 617.4376624680544 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.253000020980835 m
-ID: frame_00719_0, Profundidad: 0.010725613602374118 m, Diámetro: 575.6761836373895 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2580000162124634 m
-ID: frame_00720_0, Profundidad: 0.01931920997845671 m, Diámetro: 249.48736427819006 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_00721_0, Profundidad: 0.024572249463439055 m, Diámetro: 284.53433350064284 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2720000743865967 m
-ID: frame_00722_0, Profundidad: 0.01049257039593443 m, Diámetro: 180.2176146366357 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2760000228881836 m
-ID: frame_00722_1, Profundidad: 0.011691567786880297 m, Diámetro: 187.43194317773685 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2760000228881836 m
-ID: frame_00723_0, Profundidad: 0.016966076686493414 m, Diámetro: 261.8429288701231 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2980000972747803 m
-ID: frame_00724_0, Profundidad: 0.006917151739695093 m, Diámetro: 256.56000973344123 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.3260000944137573 m
-ID: frame_00725_0, Profundidad: 0.0058869707257849235 m, Diámetro: 195.82739058615698 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.3440001010894775 m
-ID: frame_00832_0, Profundidad: 0.019901128561212067 m, Diámetro: 204.28131230281755 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.255000114440918 m
-ID: frame_00833_0, Profundidad: 0.013288409212894647 m, Diámetro: 175.41428668319256 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2580000162124634 m
-ID: frame_00834_0, Profundidad: 0.0213793378271514 m, Diámetro: 244.16619865490472 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2600001096725464 m
-ID: frame_00835_0, Profundidad: 0.02396513069986894 m, Diámetro: 154.06214848540475 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2620000839233398 m
-ID: frame_00836_0, Profundidad: 0.0291242642083418 m, Diámetro: 206.39853351956148 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_01046_0, Profundidad: 0.013615807543114089 m, Diámetro: 158.63483512755874 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2580000162124634 m
-ID: frame_01047_0, Profundidad: 0.021581120467397463 m, Diámetro: 169.9316052416695 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_01048_0, Profundidad: 0.037870187473902694 m, Diámetro: 186.2674725700423 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2690000534057617 m
-ID: frame_01049_0, Profundidad: 0.040360949558978954 m, Diámetro: 214.9866166797724 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2760000228881836 m
-ID: frame_01050_0, Profundidad: 0.036164963767474134 m, Diámetro: 188.4692135522231 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.284000039100647 m
-ID: frame_01150_0, Profundidad: 0.013238784432237471 m, Diámetro: 450.00407101397576 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2690000534057617 m
-ID: frame_01151_0, Profundidad: 0.011217585821863052 m, Diámetro: 197.50086758011187 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2670000791549683 m
-ID: frame_01154_1, Profundidad: 0.00874842797029629 m, Diámetro: 169.27334262724307 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2690000534057617 m
-ID: frame_01155_0, Profundidad: 0.008060173943700288 m, Diámetro: 337.344740565836 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2690000534057617 m
-ID: frame_01156_0, Profundidad: 0.006749421391424537 m, Diámetro: 287.9772175562014 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2690000534057617 m
-ID: frame_01157_0, Profundidad: 0.006862991495790283 m, Diámetro: 203.21464569822228 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2690000534057617 m
-ID: frame_01158_0, Profundidad: 0.005658933908695651 m, Diámetro: 176.6214917209797 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2670000791549683 m
-ID: frame_01195_0, Profundidad: 0.017758979859932023 m, Diámetro: 176.9139987739515 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2650001049041748 m
-ID: frame_01196_0, Profundidad: 0.020227836066341043 m, Diámetro: 243.5910217143501 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2670000791549683 m
-ID: frame_01197_1, Profundidad: 0.020174809855616926 m, Diámetro: 235.13285306497372 mm, Origen: D:\12feb\Extraccion\20240212_110153
-, Altura de captura: -1.2670000791549683 m
+ID: frame_00000_0, Profundidad: 0.07367454569770593 m, Diámetro: 398.2501555849552 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104103
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00001_0, Profundidad: 0.07610266638997731 m, Diámetro: 401.8393550342891 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104103
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00002_0, Profundidad: 0.07661350337611372 m, Diámetro: 403.2912967948914 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104103
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00003_0, Profundidad: 0.07255810069706503 m, Diámetro: 401.8393550342891 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104103
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00004_0, Profundidad: 0.06992278169602084 m, Diámetro: 401.8393550342891 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104103
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00005_0, Profundidad: 0.07640922294334285 m, Diámetro: 403.2912967948914 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104103
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00006_0, Profundidad: 0.07411877024812763 m, Diámetro: 401.8393550342891 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104103
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00007_0, Profundidad: 0.0745493430367683 m, Diámetro: 401.8393550342891 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104103
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00008_0, Profundidad: 0.07300233996824956 m, Diámetro: 401.8393550342891 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104103
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00000_0, Profundidad: 0.05130822223687903 m, Diámetro: 425.041153323027 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104114
+, Altura de captura: -1.5070000886917114 m
+ID: frame_00001_0, Profundidad: 0.05177637022168735 m, Diámetro: 425.041153323027 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104114
+, Altura de captura: -1.5070000886917114 m
+ID: frame_00002_0, Profundidad: 0.048351124016132285 m, Diámetro: 414.1340487879441 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104114
+, Altura de captura: -1.5100001096725464 m
+ID: frame_00003_0, Profundidad: 0.051832465973232544 m, Diámetro: 419.18876596484813 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104114
+, Altura de captura: -1.5070000886917114 m
+ID: frame_00004_0, Profundidad: 0.05084584840366713 m, Diámetro: 420.15562282506113 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104114
+, Altura de captura: -1.5070000886917114 m
+ID: frame_00005_0, Profundidad: 0.051155166588910284 m, Diámetro: 408.8931086576041 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104114
+, Altura de captura: -1.5100001096725464 m
+ID: frame_00006_0, Profundidad: 0.04875957569967482 m, Diámetro: 417.24701556773874 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104114
+, Altura de captura: -1.5100001096725464 m
+ID: frame_00007_0, Profundidad: 0.05194913101531062 m, Diámetro: 416.52849081283927 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104114
+, Altura de captura: -1.5100001096725464 m
+ID: frame_00008_0, Profundidad: 0.048293717273382164 m, Diámetro: 429.9266838209928 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104114
+, Altura de captura: -1.5070000886917114 m
+ID: frame_00000_0, Profundidad: 0.06682109236324973 m, Diámetro: 417.8479291465454 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104131
+, Altura de captura: -1.437000036239624 m
+ID: frame_00001_0, Profundidad: 0.06801114381831508 m, Diámetro: 415.2689983058202 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104131
+, Altura de captura: -1.437000036239624 m
+ID: frame_00002_0, Profundidad: 0.0703143538273705 m, Diámetro: 417.8479291465454 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104131
+, Altura de captura: -1.437000036239624 m
+ID: frame_00003_0, Profundidad: 0.06906011055893968 m, Diámetro: 420.9269455912354 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104131
+, Altura de captura: -1.437000036239624 m
+ID: frame_00004_0, Profundidad: 0.06993890413863135 m, Diámetro: 417.8479291465454 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104131
+, Altura de captura: -1.437000036239624 m
+ID: frame_00005_0, Profundidad: 0.0724024592241439 m, Diámetro: 414.61521629783783 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104131
+, Altura de captura: -1.437000036239624 m
+ID: frame_00006_0, Profundidad: 0.06898447563226306 m, Diámetro: 413.5407762988166 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104131
+, Altura de captura: -1.437000036239624 m
+ID: frame_00007_0, Profundidad: 0.06833861532037466 m, Diámetro: 415.2689983058202 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104131
+, Altura de captura: -1.437000036239624 m
+ID: frame_00008_0, Profundidad: 0.06957339510479588 m, Diámetro: 415.2689983058202 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104131
+, Altura de captura: -1.437000036239624 m
+ID: frame_00000_0, Profundidad: 0.051063572038983596 m, Diámetro: 417.55324329437883 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104153
+, Altura de captura: -1.5000001192092896 m
+ID: frame_00001_0, Profundidad: 0.05466229775842857 m, Diámetro: 426.1905248132017 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104153
+, Altura de captura: -1.4970000982284546 m
+ID: frame_00002_0, Profundidad: 0.05434159593923149 m, Diámetro: 417.3675989537541 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104153
+, Altura de captura: -1.4970000982284546 m
+ID: frame_00003_0, Profundidad: 0.05566149298487888 m, Diámetro: 423.77975318044736 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104153
+, Altura de captura: -1.4970000982284546 m
+ID: frame_00004_0, Profundidad: 0.057343916341646706 m, Diámetro: 436.7800454167194 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104153
+, Altura de captura: -1.4970000982284546 m
+ID: frame_00005_0, Profundidad: 0.05803661507483904 m, Diámetro: 438.5872445970357 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104153
+, Altura de captura: -1.4940000772476196 m
+ID: frame_00006_0, Profundidad: 0.05660533435569426 m, Diámetro: 427.78367760002806 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104153
+, Altura de captura: -1.4940000772476196 m
+ID: frame_00007_0, Profundidad: 0.05756157258729022 m, Diámetro: 426.2179568927512 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104153
+, Altura de captura: -1.4940000772476196 m
+ID: frame_00008_0, Profundidad: 0.0589346089645002 m, Diámetro: 431.06134276653245 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104153
+, Altura de captura: -1.4940000772476196 m
+ID: frame_00000_0, Profundidad: 0.07740062317081642 m, Diámetro: 402.8363260173814 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104204
+, Altura de captura: -1.558000087738037 m
+ID: frame_00001_0, Profundidad: 0.0805901724177116 m, Diámetro: 402.55124424908956 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104204
+, Altura de captura: -1.558000087738037 m
+ID: frame_00002_0, Profundidad: 0.08046678488542836 m, Diámetro: 391.04280360690575 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104204
+, Altura de captura: -1.558000087738037 m
+ID: frame_00003_0, Profundidad: 0.08075830320725719 m, Diámetro: 401.04805153112324 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104204
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00004_0, Profundidad: 0.0838428613945239 m, Diámetro: 401.04805153112324 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104204
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00005_0, Profundidad: 0.08383802529437134 m, Diámetro: 389.44243328218107 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104204
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00006_0, Profundidad: 0.08105474882648367 m, Diámetro: 392.10876479112835 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104204
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00007_0, Profundidad: 0.08515562489388451 m, Diámetro: 398.85590808299787 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104204
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00008_0, Profundidad: 0.08370583225025086 m, Diámetro: 394.01606135186535 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\20240314_104204
+, Altura de captura: -1.5550000667572021 m
+ID: frame_00000_0, Profundidad: 0.06032545941583112 m, Diámetro: 340.1604463423891 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\BacheRef2
+, Altura de captura: -1.059000015258789 m
+ID: frame_00001_0, Profundidad: 0.062054132153059216 m, Diámetro: 339.883132164963 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\BacheRef2
+, Altura de captura: -1.059000015258789 m
+ID: frame_00002_0, Profundidad: 0.06264590142452686 m, Diámetro: 339.883132164963 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\BacheRef2
+, Altura de captura: -1.059000015258789 m
+ID: frame_00003_0, Profundidad: 0.06134739592761962 m, Diámetro: 338.6869864206224 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\BacheRef2
+, Altura de captura: -1.0570000410079956 m
+ID: frame_00004_0, Profundidad: 0.06163265036495735 m, Diámetro: 340.8297213815212 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\BacheRef2
+, Altura de captura: -1.0570000410079956 m
+ID: frame_00005_0, Profundidad: 0.06259633448760193 m, Diámetro: 339.8637074740712 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\BacheRef2
+, Altura de captura: -1.0570000410079956 m
+ID: frame_00006_0, Profundidad: 0.06246343868568194 m, Diámetro: 342.68505816885204 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\BacheRef2
+, Altura de captura: -1.0570000410079956 m
+ID: frame_00007_0, Profundidad: 0.06299522700402793 m, Diámetro: 333.30511324651 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\BacheRef2
+, Altura de captura: -1.0570000410079956 m
+ID: frame_00008_0, Profundidad: 0.0640424105652957 m, Diámetro: 340.6229490340479 mm, Origen: C:\Users\carlo\Documents\1seg\Nueva carpeta\BacheRef2
+, Altura de captura: -1.0570000410079956 m

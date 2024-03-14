@@ -136,7 +136,7 @@ class Bache:
         for punto in self.contorno:
             x_centro = punto[0] - centro_x
             y_centro = punto[1] - centro_y
-            x_metros = x_centro * self.escale_horizontal
+            x_metros = x_centro * -self.escale_horizontal
             y_metros = y_centro * self.escala_vertical 
             coordenadas_contorno_metros_centro.append([x_metros, y_metros])
         self.coordenadas_contorno_metros_centro = coordenadas_contorno_metros_centro

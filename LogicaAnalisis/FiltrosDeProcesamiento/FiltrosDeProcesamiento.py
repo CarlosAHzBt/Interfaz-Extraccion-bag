@@ -3,17 +3,27 @@ import numpy as np
 import open3d as o3d
 
 class PointCloudFilter:
-    def __init__(self):
-        pass
+    def __init__(self, invert_x_axis=False):
+        """
+        Inicializa el filtro de la nube de puntos.
+        
+        Parámetros:
+        invert_x_axis (bool): Si se debe invertir el eje X al calcular el bounding box.
+        """
+        self.invert_x_axis = invert_x_axis
 
     def get_bounding_box(self, contour_coords_meters):
         """
         Calcula el bounding box a partir de las coordenadas del contorno.
         """
-        # Convierte la lista de coordenadas a un array de NumPy para facilitar los cálculos
         coords = np.array(contour_coords_meters)
-        x_min, y_min = np.min(coords, axis=0)
-        x_max, y_max = np.max(coords, axis=0)
+        x_min, y_min = np.min(coords, axis=0) - 0.3  # Agrega margen de tolerancia
+        x_max, y_max = np.max(coords, axis=0) + 0.3  # Agrega margen de tolerancia
+        
+        # Invierte el eje X si es necesario
+        if self.invert_x_axis:
+            x_min, x_max = -x_max, -x_min  # Ajusta según la inversión y considera el margen de tolerancia
+        
         return x_min, y_min, x_max, y_max
     
     def filter_points_with_bounding_box(self, pcd, contour_coords_meters):
@@ -23,26 +33,24 @@ class PointCloudFilter:
         if pcd is None or contour_coords_meters is None:
             raise ValueError("Nube de puntos o coordenadas del contorno no definidos")
         
-        # Calcula el bounding box
         x_min, y_min, x_max, y_max = self.get_bounding_box(contour_coords_meters)
         
-        # Filtra los puntos dentro del bounding box
+        # Aplica la corrección al filtrar si se ha invertido el eje X
         points = np.asarray(pcd.points)
         colors = np.asarray(pcd.colors)
-        mask = (points[:, 0] >= x_min) & (points[:, 0] <= x_max) & (points[:, 1] >= y_min) & (points[:, 1] <= y_max)
+        if self.invert_x_axis:
+            mask = (points[:, 0] <= x_min) & (points[:, 0] >= x_max) & (points[:, 1] >= y_min) & (points[:, 1] <= y_max)
+        else:
+            mask = (points[:, 0] >= x_min) & (points[:, 0] <= x_max) & (points[:, 1] >= y_min) & (points[:, 1] <= y_max)
+        
         filtered_points = points[mask]
         filtered_colors = colors[mask]
         
-        # Crea una nueva nube de puntos con los puntos filtrados
         filtered_pcd = o3d.geometry.PointCloud()
         filtered_pcd.points = o3d.utility.Vector3dVector(filtered_points)
         filtered_pcd.colors = o3d.utility.Vector3dVector(filtered_colors)
 
-        # Opcional: Visualizar la nube de puntos filtrada
-        #self.visualize_point_cloud(filtered_pcd)
-
         return filtered_pcd
-
     @staticmethod
     def visualize_point_cloud(pcd):
         """
